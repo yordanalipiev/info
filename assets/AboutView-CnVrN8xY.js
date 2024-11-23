@@ -1,0 +1,1 @@
+import{_ as o,c as t,a,o as n}from"./index-hx60sJxf.js";const s={};function r(c,e){return n(),t("div",null,e[0]||(e[0]=[a("h1",null,"This is an about page",-1)]))}const i=o(s,[["render",r]]);export{i as default};
