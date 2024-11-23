@@ -15,7 +15,6 @@ defineComponent({
 
     onMounted(() => {
       const redirectPath = localStorage.getItem('redirectPath') as string | undefined
-      console.log(redirectPath)
       if (redirectPath) {
         router.push(redirectPath)
       }

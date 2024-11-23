@@ -5,12 +5,17 @@ export const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/HomeView.vue'), // Lazy-loaded Home view
+    component: () => import('../views/HomeView.vue'),
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/AboutView.vue'), // Lazy-loaded About view
+    component: () => import('../views/AboutView.vue'),
+  },
+  {
+    path: '/posts',
+    name: 'Posts',
+    component: () => import('../views/PostsView.vue'),
   },
 ]
 
