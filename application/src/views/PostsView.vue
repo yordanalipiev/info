@@ -16,7 +16,7 @@ export default defineComponent({
     const postContent = ref('example')
     const loadPost = async (slug: string) => {
       try {
-        const response = await fetch(`/posts/${slug}.md`)
+        const response = await fetch(`${import.meta.env.BASE_URL}posts/${slug}.md`)
         if (response.ok) {
           const markdownText = await response.text()
           postContent.value = markdownText
